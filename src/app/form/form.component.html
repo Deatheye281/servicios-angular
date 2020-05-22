@@ -1,0 +1,30 @@
+<form>
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label>Nombre del hospital:</label>
+            <input [(ngModel)]="hospital.nombre" type="text" class="form-control" name="nombre" placeholder="Nombre">
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label>Direccion del hospital:</label>
+            <input [(ngModel)]="hospital.direccion" type="text" class="form-control" name="direccion" placeholder="Direccion">
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label>Telefono:</label>
+            <input [(ngModel)]="hospital.telefono" type="number" class="form-control" name="telefono" placeholder="0">
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label>Cantidad de camas:</label>
+            <input [(ngModel)]="hospital.camas" type="number" class="form-control" name="camas" placeholder="0">
+        </div>
+    </div>
+    <div class="form-row">
+        <button  (click)="guardarHospital()" class="btn btn-primary">Crear Hospital</button>
+    </div>
+
+</form>

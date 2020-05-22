@@ -1,0 +1,18 @@
+<table class="table table-bordered">
+
+    <thead>
+        <th>Nombre</th>
+        <th>Direccion</th>
+        <th>Telefono</th>
+        <th>Cantidad de camas</th>
+    </thead>
+
+    <tbody >
+        <tr *ngFor="let hospital of hospitales">
+            <td>{{hospital.nombre}}</td>
+            <td>{{hospital.direccion}}</td>
+            <td>{{hospital.telefono}}</td>
+            <td>{{hospital.camas}}</td>
+        </tr>
+    </tbody>
+</table>
